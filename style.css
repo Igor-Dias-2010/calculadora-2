@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: all 1s ease;
+}
+body.light {
+    background-color: #f1f1f1;
+    color: #121212;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+#tudo {
+    background-color: rgb(88, 88, 88);
+    border: 4px solid black;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    place-self: center;
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#expressoes {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+#numeros button,
+.express {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#numeros button:hover,
+.express:hover {
+    background-color: gray;
+}
+
+#numeros button:active,
+.express:active {
+    transform: scale(0.8);
+}
+
+#igual {
+    grid-column: span 3;
+    background-color: rgb(0, 102, 255);
+    color: black;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+#igual:hover {
+    background-color: rgb(19, 87, 189);
+}
+
+#igual:active {
+    transform: scale(0.9);
+}
+
+#delete {
+    font-size: 20px;
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+#delete:hover {
+    background-color: rgb(226, 10, 10);
+}
+
+#delete:active {
+    transform: scale(0.9);
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 40px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.cor {
+    margin-top: 5px;
+    width: 55px;
+    margin-left: 10px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    background-color: lightgray;
+    height: 25px;
+    font-size: 15px;
+    font-family: monospace;
+    transition: all 00.3s ease;
+}
+
+.cor:hover {
+    transform: scale(1.1);
+}
+
+.cor:active {
+    transform: scale(0.9);
+}

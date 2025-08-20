@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button class="cor" onclick="light()">Light</button>
+        <button class="cor" onclick="dark()">Dark</button>
+    </nav>
+    <div id="tudo">
+        <h1>Calculadora</h1>
+        <form>
+            <input type="text" placeholder="Digite um número..." />
+            <div id="conteudo">
+                <div id="numeros">
+                    <button type="button" onclick="um()">1</button>
+                    <button type="button" onclick="dois()">2</button>
+                    <button type="button" onclick="tres()">3</button>
+                    <button type="button" onclick="quatro()">4</button>
+                    <button type="button" onclick="cinco()">5</button>
+                    <button type="button" onclick="seis()">6</button>
+                    <button type="button" onclick="sete()">7</button>
+                    <button type="button" onclick="oito()">8</button>
+                    <button type="button" onclick="nove()">9</button>
+                    <button type="button" onclick="zero()">0</button>
+                </div>
+                <div id="expressoes">
+                    <button type="button" onclick="del()" id="delete">&#9003;</button>
+                    <button type="button" onclick="par1()" class="express">(</button>
+                    <button type="button" onclick="par2()" class="express">)</button>
+                    <button type="button" onclick="mais()" class="express">+</button>
+                    <button type="button" onclick="menos()" class="express">–</button>
+                    <button type="button" onclick="multi()" class="express">*</button>
+                    <button type="button" onclick="div()" class="express">/</button>
+                    <button type="button" onclick="restodiv()" class="express">%</button>
+                    <button type="button" onclick="divinteira()" class="express">//</button>
+                    <button type="button" onclick="pot()" class="express">**</button>
+                    <button type="button" onclick="raiz()" class="express">&radic;</button>
+                    <button type="button" onclick="pi()" class="express">&pi;</button>
+                    <button type="button" onclick="igual()" id="igual">=</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
